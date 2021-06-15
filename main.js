@@ -5,7 +5,7 @@ var config = {
   type: Phaser.AUTO,
   width: 1200,
   height: 900,
-  parent: "phaser-example",
+  parent: "phaser-inf-map",
   scene: {
     preload: preload,
     create: create,
@@ -19,7 +19,7 @@ var sx = 0;
 var mapWidth = 80;
 var mapHeight = 57;
 var distance = 0;
-var tiles = [7, 7, 7, 6, 6, 6, 0, 0, 0, 1, 1, 2, 3, 4, 5];
+var tiles = Array.from(Array(1000000)).map(() => Math.floor(Math.random() * 8));
 
 var game = new Phaser.Game(config);
 
