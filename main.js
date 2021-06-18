@@ -19,7 +19,7 @@ var sx = 0;
 var mapWidth = 80;
 var mapHeight = 57;
 var distance = 0;
-var tiles = Array.from(Array(1000000)).map(() => Math.floor(Math.random() * 8));
+var tiles = [0, 0, 0, 1, 2, 2, 2, 3, 4, 4, 4, 4, 5, 6, 6, 6, 6, 6, 7];
 
 var game = new Phaser.Game(config);
 
